@@ -25,10 +25,44 @@ public class Operation implements Operator{
         }
     }
 
+
     @Override
     public OpData RandomData() {
 
         return r.Random();
     }
+
+    @Override
+    public int Accumulation(int n) {
+        if(n<=0){
+            return -1;
+        }
+        else {
+            int sum = 0;
+            for(int i = 1;i <= n;i++){
+                sum = sum+i;
+            }
+            return sum;
+        }
+    }
+
+    @Override
+    public int Circulation(int n) {
+        int sum = n;
+        while(n<10&&n>=1){
+            n++;
+            sum = sum+n;
+        }
+        return  sum;
+    }
+
+    @Override
+    public int Role(int n) {
+        n=n+1;
+        n=n+2;
+        n=n+3;
+        return n;
+    }
+
 
 }

@@ -15,4 +15,18 @@ public interface Operator {
      * @return 操作数
      */
     public OpData RandomData();
+
+    /**
+     * 从1到n做累加
+     * @param n
+     * @return
+     */
+    public int Accumulation(int n);
+
+
+    public int Circulation(int n);
+
+
+    public int Role(int n);
+
 }
